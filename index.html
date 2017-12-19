@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				list-style: none;
+			}
+			.leftBtn,.rightBtn{
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				background: #666;
+				top: 50%;
+				margin-top: -15px;
+			}
+			.leftBtn{
+				left: 20px;
+			}
+			.rightBtn{
+				right: 20px;
+			}
+			.circles{
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				margin-left: -80px;
+			}
+			.circles li{
+				float: left;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				display: inline-block;
+				background: #aaa;
+				margin-left: 10px;
+			}
+			.circles li.cur{
+				background: #666;
+			}
+			.circles li:hover{
+				cursor: pointer;
+			}
+		</style>
+		<script type="text/javascript" src="js/holder.min.js" ></script>
+	</head>
+	<body>
+		<div id="carousel1"></div>
+		<div id="carousel2"></div>
+		<div id="carousel3"></div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/Carousel.js" ></script>
+		<script type="text/javascript">
+			
+			
+			new Carousel({
+				"id":"carousel1",
+				"imagesurl":[
+					"holder.js/1000x500?text='1'",
+					"holder.js/1000x500?text='2'",
+					"holder.js/1000x500?text='3'",
+					"holder.js/1000x500?text='4'",
+					"holder.js/1000x500?text='5'",
+				],
+				"width":"1000px",
+				"height":"500px",
+				"animateTime":1000,
+				"interval":2000
+			})
+			new Carousel({
+				"id":"carousel2",
+				"imagesurl":[
+					"holder.js/1000x500?text='1'",
+					"holder.js/1000x500?text='2'",
+					"holder.js/1000x500?text='3'"
+				],
+				"width":"1000px",
+				"height":"500px",
+				"animateTime":500,
+				"interval":3000
+			})
+			new Carousel({
+				"id":"carousel3",
+				"imagesurl":[
+					"holder.js/1000x500?text='1'",
+					"holder.js/1000x500?text='2'",
+					"holder.js/1000x500?text='3'",
+					"holder.js/1000x500?text='4'"
+				],
+				"width":"1000px",
+				"height":"500px",
+				"animateTime":1500,
+				"interval":1000
+			})
+		</script>
+	</body>
+</html>
